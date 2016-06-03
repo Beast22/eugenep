@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 19-20. Sass with lodash</title>
+	<link rel="stylesheet" href="build/css/styles.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
+	">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="heading">
+			<div class="container">
+				<div class="logo pull-left">
+					<a class="logo__link" href="#">
+					<h1 class="logo__title">Build Home</h1>
+					<h2 class="logo__slogan">INDUSTRIAL THEME</h2>
+					</a>
+				</div>
+				<div class="social pull-right">
+					<ul class="social__list">
+						<li class="social__icon"><a href="#" class="social__link"><i class="fa fa-facebook"></i></a></li>
+						<li class="social__icon"><a href="#" class="social__link"><i class="fa fa-twitter"></i></a></li>
+						<li class="social__icon"><a href="#" class="social__link"><i class="fa fa-rss"></i></a></li>
+						<li class="social__icon"><a href="#" class="social__link"><i class="fa fa-linkedin"></i></a></li>
+						<li class="social__icon"><a href="#" class="social__link"><i class="fa fa-skype"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+			<div class="container menu__cont clearfix">
+		<nav class="menu navbar">
+				<div class="navbar-header">
+					<span id="category" class="visible-xs">MENU</span>
+					<button type="button" class="black navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+				<div class="menu__search pull-right">
+					<input type="text" class="menu__search menu__search--inner" placeholder="Search...">
+					<i class="fa fa-search"></i>	
+				</div>
+				<div class="collapse navbar-collapse pull-left navbar-ex1-collapse" id="resp-menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#" class="menu__link menu__link--active">HOME</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">FEATURES</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">SERVICES</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">NEWS</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">SHOP</a></li>
+					</ul>
+				</div>
+		</nav>
+			</div>
+		<main class="basic">
+			<div class="jcarousel">
+				<ul class="jcarousel__list">
+					<li class="jcarousel__item">
+						<h3 class="jcarousel__slogan jcarousel__slogan--active">
+							<span>BUILD</span>
+							<span>YOUR</span>
+							<span>BUSINESS</span>
+						</h3>
+						<img src="build/img/carousel-1.jpg" alt="carousel-1">
+					</li>
+					<li class="jcarousel__item">
+						<h3 class="jcarousel__slogan">
+							<span>REACH</span>
+							<span>YOUR</span>
+							<span>SUCCESS</span>
+						</h3>
+						<img src="build/img/carousel-2.jpg" alt="carousel-2">
+					</li>
+					<li class="jcarousel__item">
+						<h3 class="jcarousel__slogan">
+							<span>MANAGE</span>
+							<span>YOUR</span>
+							<span>LIFE</span>
+						</h3>
+						<img src="build/img/carousel-3.jpg" alt="carousel-3">
+					</li>
+				</ul>
+				<div class="jcarousel-pagination">
+					
+					<a href="#1" class="jcarousel-pagination__link--active"></a>
+					
+					<a href="#2"></a>
+						
+					<a href="#3"></a>
+		
+				</div>
+
+			</div>
+			<div class="info">
+				<ul class="info__list">
+					<li class="info__item info__item--gear">
+						<p class="info__number">01</p>
+						<h3 class="info__title">Power Inside</h3>
+						<p class="info__desc">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+
+						<a href="#" class="info__link">Read More</a>
+					</li>
+					<li class="info__item info__item--techs">
+						<p class="info__number">02</p>
+						<h3 class="info__title">New Technologies</h3>
+						<p class="info__desc">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+
+						<a href="#" class="info__link">Read More</a>
+					</li>
+					<li class="info__item info__item--truck">
+						<p class="info__number">03</p>
+						<h3 class="info__title">Fast Support</h3>
+						<p class="info__desc">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+
+						<a href="#" class="info__link">Read More</a>
+					</li>
+				</ul>
+			</div>
+		</main>
+	</div>
+	<div class="service">
+		<div class="wrapper wrapper__service">
+			<h2 class="service_title">Our Services</h2>
+			<div class="service__list">
+				<figure class="service__item">
+					<a href="#" class="service__link">
+						<img src="build/img/serv-1.jpg" alt="serv1">
+						<figurecaption class="service__desc">Schedule Services</figurecaption>
+					</a>
+				</figure>
+				<figure class="service__item">
+					<a href="#" class="service__link">
+						<img src="build/img/serv-2.jpg" alt="serv2">
+						<figurecaption class="service__desc">Preventive Maintence</figurecaption>
+					</a>
+				</figure>
+				<figure class="service__item">
+					<a href="#" class="service__link">
+						<img src="build/img/serv-3.jpg" alt="serv3">
+						<figurecaption class="service__desc">Tire & Wheel Services</figurecaption>
+					</a>
+				</figure>
+				<figure class="service__item">
+					<a href="#" class="service__link">
+						<img src="build/img/serv-4.jpg" alt="serv4">
+						<figurecaption class="service__desc">Repair Services</figurecaption>
+					</a>
+				</figure>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper wrapper__media">
+		<div class="mediablock">
+			<section class="news">
+				<h2 class="news__name">Latest News</h2>
+				<article class="news__article">
+					<a href="#" class="news__image">
+						<span class="news__month">Jan</span>
+						<span class="news__date">23</span>
+					</a>
+					<div class="news__text">
+						<h3><a href="#" class="news__link">Advanced Machinery Helps Improve Quality</a></h3>
+						<p class="news__subtitle">by <a href="#">cmsmasters</a> Comments (<a href="#">6</a>)</p>
+						<p class="news__content">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+					</div>
+				</article>
+				<article class="news__article">
+					<a href="#" class="news__image news__image--second">
+						<span class="news__month">Jan</span>
+						<span class="news__date">21</span>
+					</a>
+					<div class="news__text">
+						<h3><a href="#" class="news__link">Powerful Techniques for Advanced Service</a></h3>
+						<p class="news__subtitle">by <a href="#">cmsmasters</a> Comments (<a href="#">3</a>)</p>
+						<p class="news__content">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+					</div>
+				</article>
+			</section>
+			<section class="banners">
+				<h2 class="news__name">Banners Place</h2>
+				<div class="accordion">
+					<div class="accordion__tab">
+						<p class="accordion__title">Accordion Panel 1</p>
+					</div>
+					<p class="accordion__article">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+				</div>
+				<div class="accordion">
+					<div class="accordion__tab">
+						<p class="accordion__title">Accordion Panel 2</p>
+					</div>
+					<p class="accordion__article">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+				</div>
+				<div class="accordion">
+					<div class="accordion__tab">
+						<p class="accordion__title">Accordion Panel 3</p>
+					</div>
+					<p class="accordion__article">
+						Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+					</p>
+				</div>
+				<div class="accordion">
+					<div class="accordion__tab">
+						<p class="accordion__title">Accordion Panel 4</p>
+					</div>
+					<p class="accordion__article">
+						Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+					</p>
+				</div>		
+			</section>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="brandset">
+			<ul class="brandset__list">
+				<li class="brandset__item"><a href="#" class="brandset_link"><img src="build/img/brand-1.png" alt="brand_1"></a></li>
+				<li class="brandset__item"><a href="#" class="brandset_link"><img src="build/img/brand-2.png" alt="brand_2"></a></li>
+				<li class="brandset__item"><a href="#" class="brandset_link"><img src="build/img/brand-3.png" alt="brand_3"></a></li>
+				<li class="brandset__item"><a href="#" class="brandset_link"><img src="build/img/brand-4.png" alt="brand_4"></a></li>
+				<li class="brandset__item"><a href="#" class="brandset_link"><img src="build/img/brand-5.png" alt="brand_5"></a></li>
+				<li class="brandset__item"><a href="#" class="brandset_link"><img src="build/img/brand-6.png" alt="brand_6"></a></li>
+			</ul>
+		</div>
+	</div>
+	<footer class="footer">
+		<section class="footer__first">
+			<div class="wrapper wrapper__footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-3 footer__first__item">
+							<h3 class="footer__title">SOCIALS</h3>
+							<i class="fa fa-angle-down switcher" aria-hidden="true"></i>
+							<i class="fa fa-angle-up switcher" aria-hidden="true"></i>
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Flickr</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Twitter</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Vimeo</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 footer__first__item">
+							<h3 class="footer__title">LINKS</h3>
+							<i class="fa fa-angle-down switcher" aria-hidden="true"></i>
+							<i class="fa fa-angle-up switcher" aria-hidden="true"></i>
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#" class="footer__link">How to Write a Blog</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Create a Blog in 4 Steps</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">15 Tips to Increase Traffic</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">20 Blog Post Ideas</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 footer__first__item">
+							<h3 class="footer__title">BLOGROLL</h3>
+							<i class="fa fa-angle-down switcher" aria-hidden="true"></i>
+							<i class="fa fa-angle-up switcher" aria-hidden="true"></i>
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#" class="footer__link">Blogs Blog</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Roll Up Roll Up</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Blog Free</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Wordpress Blog</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 footer__first__item">
+							<h3 class="footer__title">ABOUT US</h3>
+							<i class="fa fa-angle-down switcher" aria-hidden="true"></i>
+							<i class="fa fa-angle-up switcher" aria-hidden="true"></i>
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#" class="footer__link">Agriculture</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Harvest</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Company news</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Investor relations</a></li>
+							</ul>
+						</div>
+					</div>
+				</div> <!-- end of container -->
+			</div>
+		</section>
+		<section class="footer__second">
+			<div class="wrapper__contacts">
+				<div class="contacts clearfix">
+					<p class="contacts__adress">BuildHomeLtd.  Street Name 123   23 45 Cityname</p>
+					<p class="contacts__phone">+123 900 123 456</p>
+					<p class="contacts__email">info@buildhome.web</p>
+					<p class="contacts__copywright">© 2014 Build Home</p>
+				</div>
+			</div>
+		</section>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.0/lodash.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="build/js/jcarousel.js"></script>
+	<script src="build/js/script.js"></script>
+	<script src="build/js/datajson.js"></script>
+</body>
+</html>

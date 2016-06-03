@@ -1,0 +1,86 @@
+@font-face {
+	font-family: "Ancient_Runes";
+	src: local("Ancient_Runes"),
+	url("../fonts/Ancient_Runes/Ancient Runes_1_1.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+.fm-carousel-title {
+    font-family: "Ancient_Runes";
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 6px;
+    padding-bottom: 7px;
+}
+
+.fm-carousel-container{
+    width: 651px;
+    margin: 3em auto;
+    position: relative;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.fm-carousel-list{
+	list-style: none;
+	display: flex;
+    flex-direction: row;
+    width: 999em;
+    position: relative;
+}
+
+.carousel-element {
+	margin-right: 25px;
+}
+
+.carousel-element img{
+	max-width: 200px;
+	border-radius: 10px;
+}
+
+.carousel-element p{
+	text-align: center;
+	border-radius: 10px;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+
+.fm-carousel-hider{
+	width: 675px;
+	overflow: hidden;
+	position: relative;
+}
+
+.fm-carousel-arrow-left{
+	position: absolute;
+	background: url(../img/prev.png) no-repeat 0 0;
+	width: 37px;
+	height: 37px;
+	top: 38%;
+	left: -58px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.fm-carousel-arrow-right{
+	position: absolute;
+	background: url(../img/next.png) no-repeat 0 0;
+	width: 37px;
+	height: 37px;
+    top: 38%;
+    right: -58px;
+    z-index: 999;
+    cursor: pointer;
+
+}
+
+.fm-carousel-arrow-left:hover{
+	background: url(../img/prev.png) no-repeat 0 -38px;
+}
+
+.fm-carousel-arrow-right:hover{
+	background: url(../img/next.png) no-repeat 0 -38px;
+}

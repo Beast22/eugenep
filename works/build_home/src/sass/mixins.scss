@@ -1,0 +1,19 @@
+@mixin news-date {
+	display: block;
+	text-align: center;
+	width: 40px;
+	line-height: 40px;
+	font-family: "UbuntuMedium", Arial, sans-serif;
+	font-size: 16px;	
+}
+
+@mixin clearfix {
+	display: block;
+ 	 &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+	}
+}
